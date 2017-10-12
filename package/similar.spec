@@ -4,7 +4,7 @@ Release:    1%{?dist}
 Epoch:      1
 Summary:    Similar OpenStack Service.
 
-License:
+License:    ASL 2.0
 URL:        http://github.com/similar
 Source:     similar-%{version}.tar.gz
 
