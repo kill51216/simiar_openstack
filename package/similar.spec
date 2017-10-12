@@ -35,7 +35,7 @@ install -p -D -m 755 package/systemd/similar-api.service %{buildroot}%{_unitdir}
 install -p -D -m 640 etc/similar/similar.conf  %{buildroot}%{_sysconfdir}/similar/similar.conf
 install -p -D -m 640 etc/similar/api-paste.ini  %{buildroot}%{_sysconfdir}/similar/api-paste.ini
 install -p -D -m 640 etc/similar/policy.json  %{buildroot}%{_sysconfdir}/similar/policy.json
-install -p -D -m 640 etc/logrotate.d/openstack-similar %{buildroot}%{_sysconfdir}/logrotate.d/similar
+install -p -D -m 640 etc/logrotate.d/similar %{buildroot}%{_sysconfdir}/logrotate.d/similar
 
 %post
 %systemd_post similar-api.service
