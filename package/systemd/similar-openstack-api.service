@@ -1,0 +1,13 @@
+[Unit]
+Description=Similar OpenStack API Service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/similar-openstack-api \
+    --config-file /etc/similar-openstack/similar-openstack.conf \
+    --log-file /var/log/similar-openstack/api.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
