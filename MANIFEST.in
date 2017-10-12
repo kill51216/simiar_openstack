@@ -1,0 +1,8 @@
+include package/systemd/similar-api.service
+include etc/similar/similar.conf
+include etc/similar/policy.json
+include etc/similar/api-paste.ini
+include etc/logrotate.d/similar
+
+prune doc
+exclude similar.spec
