@@ -1,6 +1,6 @@
 compress
 
-/var/log/similar-openstack/*.log {
+/var/log/similar/*.log {
     weekly
     rotate 4
     missingok

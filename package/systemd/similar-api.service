@@ -4,9 +4,9 @@ After=syslog.target network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/similar-openstack-api \
-    --config-file /etc/similar-openstack/similar-openstack.conf \
-    --log-file /var/log/similar-openstack/api.log
+ExecStart=/usr/bin/similar-api \
+    --config-file /etc/similar/similar.conf \
+    --log-file /var/log/similar/api.log
 Restart=always
 
 [Install]
