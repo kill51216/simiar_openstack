@@ -11,4 +11,4 @@ export TOPDIR=`pwd`/rpmbuild
 
 rpmbuild -bb --define "_topdir $TOPDIR" \
   --define "version $CU_VERSION" \
-  package/openstack-cloudultra.spec
+  package/similar.spec
