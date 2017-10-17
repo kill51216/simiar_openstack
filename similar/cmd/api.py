@@ -22,10 +22,6 @@ from oslo_log import log as logging
 
 import similar.conf
 from similar import config
-from similar import exception
-from similar import service
-from similar import version
-
 
 CONF = similar.conf.CONF
 

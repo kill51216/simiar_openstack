@@ -28,12 +28,13 @@ CONF = similar.conf.CONF
 def parse_args(argv, default_config_files=None, configure_db=True,
                init_rpc=True):
     log.register_options(CONF)
-    if CONF.similar.debug:
-        extra_default_log_levels = ['similarclient=DEBUG']
-    else:
-        extra_default_log_levels = ['similarclient=WARN']
-    log.set_defaults(default_log_levels=log.get_default_log_levels() +
-                     extra_default_log_levels)
+    # if CONF.similar.debug:
+    #    extra_default_log_levels = ['similarclient=DEBUG']
+    # else:
+    #    extra_default_log_levels = ['similarclient=WARN']
+    # log.set_defaults(default_log_levels=log.get_default_log_levels() +
+    #                 extra_default_log_levels)
+    log.set_defaults(default_log_levels=log.get_default_log_levels())
     if profiler:
         profiler.set_defaults(CONF)
     config.set_middleware_defaults()

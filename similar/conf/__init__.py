@@ -11,9 +11,9 @@
 #    under the License.
 
 from oslo_config import cfg
+
 from similar.conf import remote_debug
-from similar.conf import similar
+
 CONF = cfg.CONF
 
 remote_debug.register_cli_opts(CONF)
-similar.register_opts(CONF)
