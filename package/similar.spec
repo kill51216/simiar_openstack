@@ -12,7 +12,9 @@ Source:     similar-%{version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  python
+BuildRequires:  python-oslo-config
 Requires:       python
+Requires:       python-oslo-config
 
 
 %description
