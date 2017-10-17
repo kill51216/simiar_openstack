@@ -23,3 +23,12 @@ similar_opts = [
                 default=False,
                 help='Enable or disable debug logging with similarclient')
 ]
+
+
+def register_opts(conf):
+    conf.register_group(similar_group)
+    conf.register_opts(similar_opts, group=similar_group)
+
+
+def list_opts():
+    return {similar_group: similar_opts}
